@@ -20,9 +20,10 @@ Route::post('/contact-us', [ContactUsController::class, 'submitContactUsForm']);
 // Route::group(['prefix' => 'en'], function () {
 //     // English routes here
 //     App::setLocale('en');
-//     Route::get('/', function () {
-//         return view('welcome');
-//     });
+    Route::get('/', function () {
+        App::setLocale('en');
+        return view('welcome');
+    });
 
 // });
 
