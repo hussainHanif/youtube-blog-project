@@ -23,7 +23,7 @@
     <!-- ***** Header Area Start ***** -->
     @include('shared.header')
     <!-- ***** Header Area End ***** -->
-    @include('partials.banner')
+    {{-- @include('partials.banner') --}}
     @include('partials.youtube')
     @include('partials.about')
     @include('partials.blog')
