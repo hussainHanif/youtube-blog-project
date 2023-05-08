@@ -401,7 +401,7 @@ header
 
 .header-area .main-nav .nav li:last-child a:hover ,
 .background-header .main-nav .nav li:last-child a:hover {
-  color: #fff !important;
+  /* color: #fff !important; */
 }
 
 .header-area .main-nav .nav li a {
@@ -1396,10 +1396,13 @@ Free Quote
 */
 
 .free-quote {
-  background-image: url(../images/quote-bg-v3.jpg);
+  /* background-image: url(../images/quote-bg-v3.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center center; */
+	background: linear-gradient(334deg, #a013f7, #4da6e7, #135ff7);
+	background-size: 180% 180%;
+	animation: gradient-animation 6s ease infinite;
+  /* background-size: cover; */
   padding: 120px 0px;
   text-align: center;
   position: relative;
@@ -2109,6 +2112,13 @@ responsive
   background-color: #4da6e7 !important
 }
 
+.faq{
+  margin-top:2%;
+}
+
+.text-primary-app{
+  color: #4da6e7 !important
+}
 /* Media Query for mob */
 @media (max-width: 767px) {
   .free-quote form .main-button {
@@ -2117,6 +2127,6 @@ responsive
   }
 
   .fake-ad-right {
-      margin-top: 2%;
+      margin-top: 3%;
   }
 }

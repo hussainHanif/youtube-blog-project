@@ -4,16 +4,16 @@
       <div class="col-12">
         <nav class="main-nav">
           <!-- ***** Logo Start ***** -->
-          <a href="" class="logo">
+          <a href="{{ url('/') }}" class="logo">
             <img src="{{ asset('assets/images/logo-v3.png') }}" alt="">
           </a>
           <!-- ***** Logo End ***** -->
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
-            <li class="scroll-to-section"><a href="#top" class="active">{{ __('header.home') }}</a></li>
-            <li class="scroll-to-section"><a href="#about">{{ __('header.about') }}</a></li>
+            {{-- <li class="scroll-to-section"><a href="#top" class="active">{{ __('header.home') }}</a></li> --}}
+            {{-- <li class="scroll-to-section"><a href="#about">{{ __('header.about') }}</a></li>
             <li class="scroll-to-section"><a href="#blog">{{ __('header.blog') }}</a></li>
-            <li class="scroll-to-section"><a href="#contact">{{ __('header.contact') }}</a></li> 
+            <li class="scroll-to-section"><a href="#contact">{{ __('header.contact') }}</a></li>  --}}
             <li>
               <div class="dropdown">
                   <a style="color:black !important" class="dropdown-toggle" href="#" role="button" id="languageDropdown"

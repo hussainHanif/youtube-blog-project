@@ -74,7 +74,7 @@
             </div>
           </div>
           <div class="col-lg-8" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="col-lg-8 offset-lg-2">
+          <div class="col-lg-10 offset-lg-1" style="margin-top:10%">
               <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                   <h4><?= __("youtube.heading.main"); ?></h4>
               </div>

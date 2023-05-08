@@ -25,9 +25,10 @@
     <!-- ***** Header Area End ***** -->
     {{-- @include('partials.banner') --}}
     @include('partials.youtube')
-    @include('partials.about')
-    @include('partials.blog')
-    @include('partials.contact')
+    {{-- @include('partials.about') --}}
+    {{-- @include('partials.blog') --}}
+    {{-- @include('partials.contact') --}}
+    @include('partials.faq')
     <!-- ***** footer Area Start ***** -->
 
     @include('shared.footer')
