@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="about-left-image wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <img src="assets/images/about-dec-v3.png" alt="{{ __('about.image_alt') }}">
+                    <img src="{{ asset('assets/images/about-dec-v3.png') }}" alt="{{ __('about.image_alt') }}">
                 </div>
             </div>
             <div class="col-lg-6 align-self-center">
