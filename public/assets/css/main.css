@@ -2103,3 +2103,20 @@ responsive
     padding: 30px;
   }
 }
+/* main */
+
+.bg-app-primary {
+  background-color: #4da6e7 !important
+}
+
+/* Media Query for mob */
+@media (max-width: 767px) {
+  .free-quote form .main-button {
+      border-top-right-radius: 0 !important;
+      margin-left: 0 !important;
+  }
+
+  .fake-ad-right {
+      margin-top: 2%;
+  }
+}

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactUsController;
+use App\Http\Controllers\YoutubeController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
@@ -16,14 +17,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/contact-us', [ContactUsController::class, 'submitContactUsForm']);
+Route::post('/appendYoutubeOptions', [YoutubeController::class, 'appendYoutubeOptions']);
 
 // Route::group(['prefix' => 'en'], function () {
 //     // English routes here
 //     App::setLocale('en');
-    Route::get('/', function () {
-        App::setLocale('en');
-        return view('welcome');
-    });
+Route::get('/', function () {
+    App::setLocale('en');
+    return view('welcome');
+});
 
 // });
 
@@ -37,9 +39,13 @@ Route::post('/contact-us', [ContactUsController::class, 'submitContactUsForm']);
 
 Route::get('/{locale}', function (string $locale) {
     $languages = ['en', 'es', 'fr'];
-    if (!in_array($locale, $languages)) {
-        abort(400);
+    if (in_array($locale, $languages)) {
+        App::setLocale($locale);
     }
-    App::setLocale($locale);
-        return view('welcome');
+    return view('welcome');
+});
+
+Route::get('/youtube-download', function () {
+    App::setLocale('en');
+    return view('welcome');
 });

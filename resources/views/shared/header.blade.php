@@ -16,9 +16,10 @@
             <li class="scroll-to-section"><a href="#contact">{{ __('header.contact') }}</a></li> 
             <li>
               <div class="dropdown">
-                  <a class="dropdown-toggle" href="#" role="button" id="languageDropdown"
+                  <a style="color:black !important" class="dropdown-toggle" href="#" role="button" id="languageDropdown"
                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Language
+                      
+                      <span>Language</span>
                   </a>
                   <div class="dropdown-menu" aria-labelledby="languageDropdown">
                       <a class="dropdown-item" href="en">
