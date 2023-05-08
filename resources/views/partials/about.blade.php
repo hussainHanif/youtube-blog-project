@@ -15,7 +15,7 @@
                     </div>
                     <p>{{ __('about.text') }}</p>
                     <div class="row">
-                        @foreach(__('about.skills') as $skill)
+                        {{-- @foreach(__('about.skills') as $skill)
                         <div class="col-lg-4 col-sm-4">
                             <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
                                 <div class="progress" data-percentage="{{ $skill['percentage'] }}">
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                         </div>
-                        @endforeach
+                        @endforeach --}}
                     </div>
                 </div>
             </div>

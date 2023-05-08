@@ -8,8 +8,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <h1>{{ __('banner.title') }}</h1>
-                                    <h2>{{ __('banner.subtitle') }}</h2>
-                                    <p>{{ __('banner.description') }}</p>
+                                    {{-- <h2>{{ __('banner.subtitle') }}</h2> --}}
+                                    {{-- <p>{{ __('banner.description') }}</p> --}}
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="border-first-button scroll-to-section">
@@ -19,11 +19,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    {{-- <div class="col-lg-6">
                         <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
                             <img src="{{ asset('assets/images/online-video.svg') }}" alt="Illustration of a person working on a laptop computer">
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

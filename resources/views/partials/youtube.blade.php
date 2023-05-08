@@ -63,22 +63,20 @@
       </div>
   </div>
 </div> --}}
+          
 <div id="free-quote" class="free-quote">
   <div class="container">
       <div class="row">
         <div class="col-lg-2">
-          <!-- Your fake ad on the left -->
             <div class="fake-ad-left">
               <img src="https://via.placeholder.com/300x250" alt="Fake Ad Left">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="col-lg-8" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="col-lg-4 offset-lg-4">
+          <div class="col-lg-8 offset-lg-2">
               <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
-                  <h6><?= __("youtube.heading.top"); ?></h6>
                   <h4><?= __("youtube.heading.main"); ?></h4>
-                  <div class="line-dec"></div>
               </div>
           </div>
           <div class="col-lg-8 offset-lg-2" data-wow-duration="1s" data-wow-delay="0.8s">
@@ -86,8 +84,8 @@
                   <div class="row">
                       <div class="col-lg-8 col-sm-8">
                           <fieldset>
-                              <input type="web" name="url" id="url" class="website" placeholder="<?= __("youtube.placeholder"); ?>"
-                                  autocomplete="on" required>
+                              <input type="web" name="url" id="url" placeholder="<?= __("youtube.placeholder"); ?>"
+                                  autocomplete="off" required>
                           </fieldset>
                       </div>
                       <div class="col-lg-4 col-sm-4">
@@ -100,7 +98,6 @@
           </div>
           </div>
           <div class="col-lg-2">
-            <!-- Your fake ad on the right -->
             <div class="fake-ad-right">
               <img src="https://via.placeholder.com/300x250" alt="Fake Ad Right">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

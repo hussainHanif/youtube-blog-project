@@ -14,7 +14,7 @@
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/animated.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/animated.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
@@ -24,8 +24,8 @@
     @include('shared.header')
     <!-- ***** Header Area End ***** -->
     @include('partials.banner')
-    @include('partials.about')
     @include('partials.youtube')
+    @include('partials.about')
     @include('partials.blog')
     @include('partials.contact')
     <!-- ***** footer Area Start ***** -->
@@ -40,7 +40,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     {{-- <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script> --}}
     <script src="{{ asset('assets/js/owl-carousel.js') }}"></script>
-    <script src="{{ asset('assets/js/animation.js') }}"></script>
+    {{-- <script src="{{ asset('assets/js/animation.js') }}"></script> --}}
     <script src="{{ asset('assets/js/imagesloaded.js') }}"></script>
     <script src="{{ asset('assets/js/custom.js') }}"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
