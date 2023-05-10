@@ -19,33 +19,35 @@ use Illuminate\Support\Facades\Route;
 Route::post('/contact-us', [ContactUsController::class, 'submitContactUsForm']);
 Route::post('/appendYoutubeOptions', [YoutubeController::class, 'appendYoutubeOptions']);
 
-// Route::group(['prefix' => 'en'], function () {
-//     // English routes here
-//     App::setLocale('en');
 Route::get('/', function () {
     App::setLocale('en');
-    return view('welcome');
+    return view('app');
 });
 
-// });
 
-// Route::group(['prefix' => 'fr'], function () {
-//     // French routes here
-//     App::setLocale('fr');
-//     Route::get('/', function () {
-//         return view('welcome');
-//     });
-// });
+Route::get('/en', function () {
+        App::setLocale('en');
+    return view('app');
+});
 
-Route::get('/{locale}', function (string $locale) {
-    $languages = ['en', 'es', 'fr'];
-    if (in_array($locale, $languages)) {
-        App::setLocale($locale);
-    }
-    return view('welcome');
+Route::get('/fr', function () {
+    App::setLocale('fr');
+return view('app');
+});
+
+Route::get('/es', function () {
+    App::setLocale('es');
+return view('app');
+});
+
+Route::get('/about-us', function () {
+    return view('about-us');
 });
 
 Route::get('/youtube-download', function () {
-    App::setLocale('en');
-    return view('welcome');
+    return view('app');
+});
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
 });

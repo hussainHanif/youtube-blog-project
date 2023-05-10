@@ -1,5 +1,4 @@
 <div id="faq" class="container">
-    <!--Section: FAQ-->
     <section class="faq">
         <h2 class="text-center mb-2 pb-2 text-primary-app fw-bold">Best Youtube to MP4 Downloader
         </h2>
@@ -84,5 +83,4 @@
             </div>
         </section>
     </section>
-    <!--Section: FAQ-->
 </div>

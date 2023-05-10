@@ -15,26 +15,6 @@
                     </div>
                     <p>{{ __('about.text') }}</p>
                     <div class="row">
-                        {{-- @foreach(__('about.skills') as $skill)
-                        <div class="col-lg-4 col-sm-4">
-                            <div class="skill-item wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">
-                                <div class="progress" data-percentage="{{ $skill['percentage'] }}">
-                                    <span class="progress-left">
-                                        <span class="progress-bar"></span>
-                                    </span>
-                                    <span class="progress-right">
-                                        <span class="progress-bar"></span>
-                                    </span>
-                                    <div class="progress-value">
-                                        <div>
-                                            {{ $skill['percentage'] }}%<br>
-                                            <span>{{ $skill['name'] }}</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach --}}
                     </div>
                 </div>
             </div>

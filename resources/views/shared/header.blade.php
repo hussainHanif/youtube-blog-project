@@ -1,42 +1,23 @@
-<header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+<header class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <nav class="main-nav">
-          <!-- ***** Logo Start ***** -->
-          <a href="{{ url('/') }}" class="logo">
-            <img src="{{ asset('assets/images/logo-v3.png') }}" alt="">
+    <a class="navbar-brand logo" href="{{ url('/') }}">
+      <img src="{{ asset('assets/images/logo.png') }}" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a  style="color:black !important" class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
           </a>
-          <!-- ***** Logo End ***** -->
-          <!-- ***** Menu Start ***** -->
-          <ul class="nav">
-            {{-- <li class="scroll-to-section"><a href="#top" class="active">{{ __('header.home') }}</a></li> --}}
-            {{-- <li class="scroll-to-section"><a href="#about">{{ __('header.about') }}</a></li>
-            <li class="scroll-to-section"><a href="#blog">{{ __('header.blog') }}</a></li>
-            <li class="scroll-to-section"><a href="#contact">{{ __('header.contact') }}</a></li>  --}}
-            <li>
-              <div class="dropdown">
-                  <a style="color:black !important" class="dropdown-toggle" href="#" role="button" id="languageDropdown"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      
-                      <span>Language</span>
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="languageDropdown">
-                      <a class="dropdown-item" href="en">
-                          English
-                      </a>
-                      <a class="dropdown-item" href="fr">
-                          Français
-                      </a>
-                  </div>
-          </li>
-          </ul>        
-          <a class='menu-trigger'>
-              <span>{{ __('header.menu') }}</span>
-          </a>
-          <!-- ***** Menu End ***** -->
-        </nav>
-      </div>
+          <div class="dropdown-menu" aria-labelledby="languageDropdown">
+            <a class="dropdown-item" href="{{ url('/en') }}">English</a>
+            <a class="dropdown-item" href="{{ url('/fr') }}">Français</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </header>

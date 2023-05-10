@@ -1,125 +1,83 @@
-{{-- <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>{{ __('footer.copyright') }} 
-          <br>{{ __('footer.sub_heading_1') }}
-          <br>{{ __('footer.sub_heading_2') }}</a>
-        </p>
+<footer class="text-center text-lg-start">
+   <section class="container">
+     <section class="d-flex justify-content-left justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          {{-- @lang('footer.get_connected') --}}
+          <h5><b>{{ __('footer.get_connected') }}</b></h5>
         </div>
-      </div>
-       
-    </div>
-  </footer> --}}
-
-<!-- Footer -->
-<footer class="bg-primary text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4">
-        <!-- Section: Text -->
-        <section class="mb-4">
-            <p>
-              {{ __('footer.sub_heading_1') }}
-            </p>
-        </section>
-        <!-- Section: Text -->
-        <!-- Section: Links -->
-     <section class="link-list">
-    <!--Grid row-->
-    {{-- <div class="row d-flex justify-content-center">
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-                <li>
-                    <a href="#faq" class="text-white">FAQ</a>
-                </li>
-            </ul>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-                <li>
-                    <a href="#" class="text-white">Terms of Service</a>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-                <li>
-                    <a href="#faq" class="text-white">Privacy Policy</a>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-                <li>
-                    <a href="#faq" class="text-white">FAQ</a>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
-    </div> --}}
-    <!--Grid row-->
-    </section>
-
-    <section class="link-list">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
-                  <ul class="list-unstyled mb-0">
-                      <li>
-                          <a href="#faq" class="text-white">FAQ</a>
-                      </li>
-                  </ul>
-              </div>
-  
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
-                  <ul class="list-unstyled mb-0">
-                      <li>
-                          <a href="#" class="text-white">Terms of Service</a>
-                      </li>
-                  </ul>
-              </div>
-  
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
-                  <ul class="list-unstyled mb-0">
-                      <li>
-                          <a href="#faq" class="text-white">Privacy Policy</a>
-                      </li>
-                  </ul>
-              </div>
-  
-              <div class="col-lg-3 col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-center">
-                  <ul class="list-unstyled mb-0">
-                      <li>
-                          <a href="#faq" class="text-white">FAQ</a>
-                      </li>
-                  </ul>
-              </div>
+      </section>
+      <section class="">
+        <div class="container text-left text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>{{ __('footer.about_title') }}
+              </h5>
+              <p>
+                {{ __('footer.about_description') }}
+              </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold mb-4">
+                {{ __('footer.video_title') }}
+                            </h5>
+              <p>
+                <a href="{{ url('/youtube-download') }}" class="text-reset">{{ __('footer.download_video') }}</a>
+              </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold mb-4">
+                {{ __('footer.terms_title') }}
+              </h5>
+              <p>
+                <a href="{{ url('/privacy-policy') }}" class="text-reset">{{ __('footer.terms_conditions') }}</a>
+              </p>
+              <p>
+                <a href="{{ url('/privacy-policy') }}" class="text-reset">{{ __('footer.privacy_policy') }}</a>
+              </p>
+              <p>
+                <a href="{{ url('/about-us#contact') }}" class="text-reset">{{ __('footer.contact_us') }}</a>
+              </p>
+              <p>
+                <a href="{{ url('/about-us') }}" class="text-reset">{{ __('footer.about_us') }}</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h5 class="text-uppercase fw-bold mb-4">{{ __('footer.contact_title') }}</h5>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
           </div>
+        </div>
+      </section>
+      <div class="text-center p-4">
+        <b>©2021 Copyright:</b>
+        <p><a class="text-reset fw-bold" href="#">4reedownloadonline.com</a></p>
       </div>
-  </section>
-  
-
-        <!-- Section: Links -->
-
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      {{ __('footer.copyright') }} :
-        <a class="text-white" href="/">4reedownloadonline.com</a>
-    </div>
-    <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+   </section>
+  </footer>
