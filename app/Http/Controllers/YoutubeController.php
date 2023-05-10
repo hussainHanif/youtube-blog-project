@@ -39,6 +39,7 @@ class YoutubeController extends Controller
             $data = [
                 'thumbnail' => 'https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
                 'title' => 'This is tittle of the video',
+                'duration' => '4:37',
                 'data' => [
                     [
                         'download_link' => 'https://example.com/video.mp4',
@@ -46,7 +47,6 @@ class YoutubeController extends Controller
                         'size' => '10 MB',
                         'audio' => true,
                         'type' => 'mp4',
-                        'duration' => '3:37',
                     ],
                     [
                         'download_link' => 'https://example.com/video.mp4',
@@ -54,8 +54,6 @@ class YoutubeController extends Controller
                         'size' => '8 MB',
                         'audio' => true,
                         'type' => 'mp4',
-                        'duration' => '4:37',
-
                     ],
                     [
                         'download_link' => 'https://example.com/video.mp4',
@@ -63,7 +61,6 @@ class YoutubeController extends Controller
                         'size' => '6 MB',
                         'audio' => false,
                         'type' => 'mp4',
-                        'duration' => '4:37',
                     ],
                     [
                         'download_link' => 'https://example.com/video.mp4',
@@ -71,7 +68,6 @@ class YoutubeController extends Controller
                         'size' => '4 MB',
                         'audio' => false,
                         'type' => 'mp3',
-                        'duration' => '4:37',
                     ]
                 ], 'success' => true,
             ];
