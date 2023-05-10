@@ -11,7 +11,7 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="border-first-button scroll-to-section">
-                                        <a href="#free-quote">{{ __('banner.cta') }}</a>
+                                        <a href="#youtube-download">{{ __('banner.cta') }}</a>
                                     </div>
                                 </div>
                             </div>

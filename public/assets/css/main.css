@@ -746,6 +746,17 @@ header
     .header-area .main-nav .logo {
         color: #1e1e1e;
     }
+    /* //mob */
+    .logo {
+        max-width: 60% !important;
+        height: auto;
+        text-align: center;
+    }
+    
+    .logo img {
+        max-width: 100% !important;
+        height: auto;
+    }
 
     .header-area.header-sticky .nav li a:hover,
     .header-area.header-sticky .nav li a.active {
@@ -1525,7 +1536,7 @@ Free Quote
 --------------------------------------------- 
 */
 
-.free-quote {
+.youtube-download {
     /* background-image: url(../images/quote-bg-v3.jpg);
   background-repeat: no-repeat;
   background-position: center center; */
@@ -1540,21 +1551,21 @@ Free Quote
     /* margin-top: 130px; */
 }
 
-.free-quote .section-heading {
+.youtube-download .section-heading {
     /* margin-bottom: 60px; */
 }
 
-/* .free-quote .section-heading h6, */
-.free-quote .section-heading h4 {
+/* .youtube-download .section-heading h6, */
+.youtube-download .section-heading h4 {
     color: #fff;
 }
 
-.free-quote .section-heading .line-dec {
+.youtube-download .section-heading .line-dec {
     margin: 0 auto;
     background-color: #fff;
 }
 
-.free-quote form {
+.youtube-download form {
     background-color: #fff;
     display: inline-block;
     width: 100%;
@@ -1564,7 +1575,7 @@ Free Quote
     z-index: 1;
 }
 
-.free-quote form input {
+.youtube-download form input {
     width: 100%;
     margin-top: 20px;
     margin-left: 30px;
@@ -1582,7 +1593,7 @@ Free Quote
     outline: none;
 }
 
-.free-quote form .main-button {
+.youtube-download form .main-button {
     width: 100%;
     height: 80px;
     /* border-top-right-radius: 40px; */
@@ -2247,12 +2258,12 @@ responsive
         margin-right: 15px;
     }
 
-    .free-quote form input {
+    .youtube-download form input {
         margin-left: 0px;
         padding: 0px 30px;
     }
 
-    .free-quote form button {
+    .youtube-download form button {
         margin-left: 0px;
         /* border-bottom-left-radius: 40px; */
         /* border-top-right-radius: 0px; */
@@ -2300,7 +2311,7 @@ responsive
 
 /* Media Query for mob */
 @media (max-width: 767px) {
-    .free-quote form .main-button {
+    .youtube-download form .main-button {
         /* border-top-right-radius: 0 !important; */
         margin-left: 0 !important;
     }
@@ -2348,7 +2359,7 @@ responsive
 }
 
 .logo img {
-    max-width: 100% !important;
+    max-width: 60% !important;
     height: auto;
 }
 
