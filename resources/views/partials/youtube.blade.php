@@ -2,13 +2,13 @@
   <div class="container">
       <div class="row">
         <div class="col-lg-2">
-            <div class="fake-ad-left">
+            <div class="fake-ad-left mb-5">
               <img src="https://via.placeholder.com/300x250" alt="Fake Ad Left">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="col-lg-8" data-wow-duration="1s" data-wow-delay="0.8s">
-          <div class="col-lg-10 offset-lg-1" style="margin-top:10%">
+          <div class="col-lg-10 offset-lg-1" style="margin-top:-1rem">
               <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">
                   <h4><?= __("youtube.heading.main"); ?></h4>
               </div>
@@ -24,7 +24,7 @@
                       </div>
                       <div class="col-lg-4 col-sm-4">
                           <fieldset>
-                              <button type="button" class="main-button" onclick="appendYoutubeOptions()"><?= __("youtube.download_button"); ?></button>
+                              <button type="button" id="youtubeBtn" class="main-button" onclick="appendYoutubeOptions()"><?= __("youtube.download_button"); ?></button>
                           </fieldset>
                       </div>
                   </div>
@@ -32,13 +32,16 @@
           </div>
           </div>
           <div class="col-lg-2">
-            <div class="fake-ad-right">
+            <div class="fake-ad-right mb-5">
               <img src="https://via.placeholder.com/300x250" alt="Fake Ad Right">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
-          <div class="container py-5 optionYoutubeDiv">
+          <div class="optionYoutubeDiv" id="optionYoutubeDiv" style="margin-top: -5rem;">
               
+        </div>
+        <div class="loader">
+          <div class="customLoader justify-content-center mt-5"></div>
         </div>
     </div>
 </div>

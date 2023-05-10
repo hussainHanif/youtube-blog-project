@@ -39,7 +39,7 @@ function isValidUrl(url) {
 }
 
 function appendYoutubeOptions() {
-    var targetDiv = $("#youtube-download");
+    var targetDiv = $("#optionYoutubeDiv");
     $("html, body").animate(
         {
             scrollTop: targetDiv.offset().top,
@@ -49,7 +49,8 @@ function appendYoutubeOptions() {
     targetDiv.focus();
     let url = $("#url").val();
     if (!isValidUrl(url)) return showToast("Please enter valid url");
-    $("#js-preloader").removeClass("loaded");
+    $(".customLoader").addClass("jimu-primary-loading");
+    $('#youtubeBtn').prop('disabled', true);
 
     $.ajax({
         url: baseUrl + "/appendYoutubeOptions",
@@ -59,10 +60,13 @@ function appendYoutubeOptions() {
         },
         dataType: "json",
         success: function (response) {
-            setTimeout($("#js-preloader").addClass("loaded"), 2000);
+            
+            $(".customLoader").removeClass("jimu-primary-loading");
+            $('#youtubeBtn').prop('disabled', false);
+
             if (!response.success) return showToast(response.data.message);
             var data = response;
-            var html = `<div class="row justify-content-center"> <div class="col-md-8 col-lg-6"> <div class="card border-0 shadow-lg rounded-lg"> <div class="card-header py-3 bg-app-primary"> <h4 class="text-white mb-0"></h4> </div> <div class="card-body"> <div class="row"> <div class="col-md-6"> <img src="${data.thumbnail}" class="img-fluid mb-3" alt="${data.title}"> <h5 style="color:black !important;" class="mb-3">${data.title}</h5><span class="text-muted"> &nbsp; ${data.duration}</span> </div> <div class="col-md-6"> <form> <div class="form-group mb-3"> <label for="qualitySelect">Select Video/Audio Quality</label> <select class="form-control" id="downloadMedia">`;
+            var html = `<div class="row justify-content-center"> <div class="col-md-8 col-lg-6"> <div class="card border-0 shadow-lg rounded-lg"> <div class="card-header py-3 bg-app-primary"> <h4 class="text-white mb-0"></h4> </div> <div class="card-body"> <div class="row"> <div class="col-md-6"> <img src="${data.thumbnail}" class="img-fluid mb-3" alt="${data.title}"> <h5 style="color:black !important;" class="mb-3">${data.title}</h5><span class="text-muted"> &nbsp; ${data.duration}</span> </div> <div class="col-md-6"> <form> <div class="form-group mb-3"> <label for="qualitySelect">Select Video/Audio Quality</label> <select style="-webkit-appearance: listbox !important;" class="form-control" id="downloadMedia">`;
 
             $.each(data.data, function (index, data) {
                 html += `<option value="${data.download_link}"> ${

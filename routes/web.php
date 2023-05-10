@@ -17,7 +17,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::post('/contact-us', [ContactUsController::class, 'submitContactUsForm']);
-Route::post('/appendYoutubeOptions', [YoutubeController::class, 'appendYoutubeOptions']);
+// Route::post('/appendYoutubeOptions', [YoutubeController::class, 'appendYoutubeOptions']);
+Route::post('/appendYoutubeOptions', [YoutubeController::class, 'appendYoutubeOptions'])->middleware('throttle:5,1');
 
 Route::get('/', function () {
     App::setLocale('en');

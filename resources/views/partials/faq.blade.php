@@ -16,9 +16,9 @@
                 <br>
                 <div class="row">
                     <div class="col-md-7">
-                        <h3 class="text-primary-app mb-2 pb-2"><b>How to Download Youtube Video 4reedownloadonline?</b>
+                        <h3 class="text-primary-app pb-2"><b>How to Download Youtube Video 4reedownloadonline?</b>
                         </h3>
-                        <div class="features">
+                        <div class="features mb-2">
                             <ul class="itemstyle">
                                 <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum suscipit, sed
                                     repellendus commodi hic quidem assumenda laudantium quisquam! Doloremque obcaecati
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <h3 class="text-primary-app mb-2 pb-2"><b>Lorem ipsum dolor sit </b></h3>
+                        <h3 class="text-primary-app pb-2"><b>Lorem ipsum dolor sit </b></h3>
                         <div class="features">
                             <ul class="itemstyle">
                                 <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque odit fuga ipsam
@@ -44,9 +44,7 @@
                 </div>
                 <br>
                 <hr>
-                <br>
-                <div class="row">
-                    <div class="row pt-5">
+                    <div class="row" style="margin-top: -2rem;!important">
                         <div class="col-md-4 text-center d-flex flex-column justify-content-center">
                           <span class="glyphicon40 glyphicon glyphicon-dashboard"><img src="{{ asset('assets/images/conversion.svg') }}" class="img-thumbnail" alt="faster conversion"></span>
                           <h4><b>Unlimited Conversion</b></h4>
@@ -78,8 +76,6 @@
                           <p>Download YouTube videos and save them in Mp4 format to watch anytime, anywhere, without using your internet data. It’s also useful when traveling in areas without internet connectivity.</p>
                         </div>
                       </div>
-                      
-                </div>
             </div>
         </section>
     </section>

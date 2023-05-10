@@ -1,4 +1,4 @@
-<footer class="text-center text-lg-start">
+<footer class="text-center text-lg-start" style="margin-top: 5rem;">
    <section class="container">
      <section class="d-flex justify-content-left justify-content-lg-between p-4 border-bottom">
         <div class="me-5 d-none d-lg-block">
@@ -30,9 +30,12 @@
         <div class="container text-left text-md-start mt-5">
           <div class="row mt-3">
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <h5 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>{{ __('footer.about_title') }}
-              </h5>
+              {{-- <h5 class="text-uppercase fw-bold mb-4"> --}}
+                {{-- {{ __('footer.about_title') }} --}}
+              {{-- </h5> --}}
+              <div >
+                  <img src="{{ asset('assets/images/logo.png') }}" alt="">
+              </div>
               <p>
                 {{ __('footer.about_description') }}
               </p>

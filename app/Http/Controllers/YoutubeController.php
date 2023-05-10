@@ -9,9 +9,6 @@ class YoutubeController extends Controller
 {
     public function appendYoutubeOptions(Request $request)
     {
-        // $request->validate([
-        //     'url' => 'required',
-        // ]);
         $validator = Validator::make($request->all(), [
             'url' => [
                 'required',
@@ -35,9 +32,10 @@ class YoutubeController extends Controller
         if ($validator->fails()) {
             return ['data' => ['message' => 'Invalid Youtube URL'], 'success' => false];
         }
+        sleep(5);
         try {
             $data = [
-                'thumbnail' => 'https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg',
+                'thumbnail' => 'https://i.ytimg.com/vi/GF_7p-I_hyM/sddefault.jpg',
                 'title' => 'This is tittle of the video',
                 'duration' => '4:37',
                 'data' => [
